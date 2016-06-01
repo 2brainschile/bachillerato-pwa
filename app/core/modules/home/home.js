@@ -22,6 +22,14 @@ export default class HomeCtrl {
 		var initTimer = function () {
 			startTimer = $interval(function () {
 				$scope.currentSeconds = ((Date.now() - startTime) / 1000) | 0;
+				if ($scope.currentSeconds === 120) {
+					$interval.cancel(startTimer);
+					$scope.gameEnded = true;
+					$scope.gameLost = true;
+					$scope.playing = false;
+					lettersService.stopLetterInterval();
+					$scope.currentPuntos = 0;
+				}
 			}, 1000);
 		};
 
@@ -49,6 +57,7 @@ export default class HomeCtrl {
 				$scope.actionText = "Jugar de nuevo";
 				$scope.playing = false;
 				form.$setPristine();
+				lettersService.stopLetterInterval();
 				wordsService.saveWords($scope.currentLetter.toLowerCase(), $scope.categories);
 				if ($scope.currentSeconds < 60) {
 					$scope.currentPuntos += 30;

@@ -15,7 +15,8 @@ block content
 			label {{category.label}}
 		.end-game(ng-if="gameEnded")
 			h3.text-center.color-black Juego finalizado
-			p.text-center.color-black Te demoraste {{currentSeconds}} segundos
+			p.text-center.color-black(ng-if="!gameLost") Te demoraste {{currentSeconds}} segundos
+			p.text-center.color-black(ng-if="gameLost") Perdiste!
 			p.text-center.color-black
 				strong {{currentPuntos}} puntos
 		button.button(type='submit' angular-ripple="true" ng-class="{'buttonBlue': !playing, 'buttonRed': playing}")
