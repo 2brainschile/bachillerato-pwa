@@ -51,7 +51,6 @@ export default class HomeCtrl {
 			if (form.$invalid) return false;
 
 			if ($scope.playing) {
-				lettersService.initLetterInterval();
 				$interval.cancel(startTimer);
 				$scope.gameEnded = true;
 				$scope.categories = deleteDuplicates($scope.categories);
@@ -69,6 +68,7 @@ export default class HomeCtrl {
 					$scope.currentPuntos -= ($scope.currentSeconds - 60);
 				}
 			} else {
+				lettersService.initLetterInterval();
 				initTimer();
 				$scope.gameEnded = false;
 				$scope.categories = angular.copy(allCategories);
