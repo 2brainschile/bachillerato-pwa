@@ -8,11 +8,6 @@ angular.module('bachillerato', [
   require('./controllers').name,
   require('./services').name
 ])
-
-.run(function (lettersService) {
-  lettersService.initLetterInterval();
-})
-
 ;
 
 var config = {

@@ -51,6 +51,7 @@ export default class HomeCtrl {
 			if (form.$invalid) return false;
 
 			if ($scope.playing) {
+				lettersService.initLetterInterval();
 				$interval.cancel(startTimer);
 				$scope.gameEnded = true;
 				$scope.categories = deleteDuplicates($scope.categories);
