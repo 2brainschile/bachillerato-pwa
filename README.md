@@ -1,4 +1,5 @@
-# Gestion de Bodegas - Implementa
+# bachillerato-pwa
+Bachillerato en Progressive Web App
 
 ### Instalar dependencias
 
@@ -12,3 +13,4 @@
 ### Hacer Build
 
 ```npm run build```
+=======
