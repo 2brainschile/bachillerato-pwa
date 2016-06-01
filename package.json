@@ -1,0 +1,44 @@
+{
+  "name": "bachillerato",
+  "version": "0.0.1",
+  "description": "bachillerato juego - pwa",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --content-base app --hot",
+    "build": "NODE_ENV=production webpack -p --config webpack.production.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^5.8.23",
+    "babel-eslint": "^4.1.3",
+    "babel-loader": "^5.3.2",
+    "css-loader": "^0.16.0",
+    "eslint": "^1.2.1",
+    "eslint-config-airbnb": "0.0.8",
+    "eslint-loader": "^1.0.0",
+    "file-loader": "^0.8.4",
+    "jade": "^1.11.0",
+    "jade-html-loader": "0.0.3",
+    "jade-loader": "^0.7.1",
+    "ng-annotate-loader": "0.0.6",
+    "node-sass": "^3.2.0",
+    "polyfiller": "0.0.32",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^2.0.1",
+    "style-loader": "^0.12.3",
+    "url-loader": "^0.5.6",
+    "webpack": "^1.11.0",
+    "webpack-dev-server": "^1.10.1"
+  },
+  "dependencies": {
+    "angular": "~1.4.4",
+    "angular-animate": "^1.4.5",
+    "angular-i18n": "^1.4.5",
+    "angular-ui-router": "^0.2.15",
+    "jquery": "^2.2.4",
+    "lodash": "^3.10.1",
+    "ng-annotate-webpack-plugin": "^0.1.2"
+  }
+}

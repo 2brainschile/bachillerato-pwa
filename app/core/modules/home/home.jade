@@ -1,0 +1,27 @@
+extends ../layout
+block content
+	form(ng-submit="send(playForm)" name="playForm" novalidate)
+		h1 Bachillerato App
+		h2.current-letter(ng-if="playing") {{currentLetter}}
+		.group(ng-if="playing" ng-repeat="category in categories")
+			input(type="text" 
+				ng-model="category.value" name="{{category.label}}" 
+				ng-class="{'used': category.value || playForm[category.label].$dirty && playForm[category.label].$invalid}" ng-pattern="beginWith" 
+				ng-focus="setFocusTime(category.label)"
+				ng-minlength="2"
+				required)
+			span.highlight
+			span.bar
+			label {{category.label}}
+		.end-game(ng-if="gameEnded")
+			h3.text-center.color-black Juego finalizado
+			p.text-center.color-black Te demoraste {{currentSeconds}} segundos
+			p.text-center.color-black
+				strong {{currentPuntos}} puntos
+		button.button(type='submit' angular-ripple="true" ng-class="{'buttonBlue': !playing, 'buttonRed': playing}")
+			|	{{actionText}}
+			.ripples.buttonRipples
+				span.ripplesCircle
+		p.text-center.color-black(ng-if="playing") Tiempo: {{currentSeconds}}s
+
+

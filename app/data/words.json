@@ -1,0 +1,104 @@
+{	
+	"words":{
+		"a":{
+			"Nombre o Apellido": {
+				"user-id-1": "Antonia"
+			},
+			"Animal": {
+				"user-id-1": "Avispa"
+			},
+			"Pais o Ciudad":{
+				"user-id-1": "Argentina"
+			},
+			"Color o Cosa (Objeto)":{
+				"user-id-1": "Azul"
+			},
+			"Fruta o Verdura":{
+				"user-id-1": "Acelga"
+			},
+			"Profesion u Oficio":{
+				"user-id-1": "Albañil"
+			}
+		},
+		"b":{
+			"Nombre o Apellido": {
+				"user-id-1": "Bastián"
+			},
+			"Animal": {
+				"user-id-1": "Burro"
+			},
+			"Pais o Ciudad":{
+				"user-id-1": "Bélgica"
+			},
+			"Color o Cosa (Objeto)":{
+				"user-id-1": "Blanco"
+			},
+			"Fruta o Verdura":{
+				"user-id-1": "Banana"
+			},
+			"Profesion u Oficio":{
+				"user-id-1": "Bombero"
+			}
+		},
+		"c":{
+			"Nombre o Apellido": {
+				"user-id-1": "Claudio"
+			},
+			"Animal": {
+				"user-id-1": "Caracol"
+			},
+			"Pais o Ciudad":{
+				"user-id-1": "Chile"
+			},
+			"Color o Cosa (Objeto)":{
+				"user-id-1": "Cafe"
+			},
+			"Fruta o Verdura":{
+				"user-id-1": "Chirimoya"
+			},
+			"Profesion u Oficio":{
+				"user-id-1": "Carpintero"
+			}
+		},
+		"d":{
+			"Nombre o Apellido": {
+				"user-id-1": "Daniela"
+			},
+			"Animal": {
+				"user-id-1": "Delfín"
+			},
+			"Pais o Ciudad":{
+				"user-id-1": "Dinamarca"
+			},
+			"Color o Cosa (Objeto)":{
+				"user-id-1": "Dorado"
+			},
+			"Fruta o Verdura":{
+				"user-id-1": "Durazno"
+			},
+			"Profesion u Oficio":{
+				"user-id-1": "Dentista"
+			}
+		},
+		"e":{
+			"Nombre o Apellido": {
+				"user-id-1": "Esteban"
+			},
+			"Animal": {
+				"user-id-1": "Elefante"
+			},
+			"Pais o Ciudad":{
+				"user-id-1": "España"
+			},
+			"Color o Cosa (Objeto)":{
+				"user-id-1": "Esmeralda"
+			},
+			"Fruta o Verdura":{
+				"user-id-1": "Espinaca"
+			},
+			"Profesion u Oficio":{
+				"user-id-1": "Enfermero"
+			}
+		}
+	}
+}

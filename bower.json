@@ -1,0 +1,23 @@
+{
+  "name": "Bachillerato PWA",
+  "description": "Bachillerato Juego - PWA",
+  "main": "index.js",
+  "authors": [
+    "Sebastián Schuchhardt <seba.sch999@gmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "tests"
+  ],
+  "dependencies": {
+    "angulartics-google-analytics": "^0.1.4",
+    "angular-ripple": "*",
+    "angular-sanitize": "^1.5.6",
+    "angularfire": "^1.2.0"
+  }
+}
